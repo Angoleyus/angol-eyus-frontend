@@ -1,9 +1,5 @@
-// Minimal replacement to ensure file touch/content update for git if needed, but rename handles it.
-// Actually, I need to make sure I update the content if there are type imports.
-// The file viewed previously had no explicit type imports like `import type ...`.
-// It just had `import { ... } from ...`.
-// So just renaming is fine.
-
+'use client';
+import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { LogOut, Crown, AlertTriangle, CheckCircle, XCircle } from 'lucide-react';
 import Link from 'next/link';
