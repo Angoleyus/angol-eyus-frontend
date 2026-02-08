@@ -10,6 +10,7 @@ export default function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        console.log("Attempting login to:", process.env.NEXT_PUBLIC_API_URL);
         try {
             const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
                 method: 'POST',
