@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brutal-black text-brutal-white font-sans antialiased;
+  }
+}
+
+.brutal-border {
+  border: 1px solid #333;
+  transition: all 0.2s ease;
+}
+
+.brutal-border:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.purple-glow {
+  text-shadow: 0 0 20px rgba(124, 58, 237, 0.8);
+}
