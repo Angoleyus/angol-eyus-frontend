@@ -21,7 +21,7 @@ export default function Home() {
 
                 <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-mono">
                     Stop wasting years on products nobody wants. <br />
-                    <span className="text-brutal-purple font-bold">Angol Eyus</span> decides if yours survives.
+                    <span className="text-brutal-purple font-bold">ANGOLEYUS</span> decides if yours survives.
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-12">

@@ -33,7 +33,7 @@ export default function Register() {
             <div className="w-full max-w-md space-y-8">
                 <div className="text-center flex flex-col items-center">
                     <Link href="/">
-                        <img src="/logo.png" alt="ANGOL EYUS" className="h-24 w-auto mb-4 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]" />
+                        <img src="/logo.png" alt="ANGOLEYUS" className="h-24 w-auto mb-4 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]" />
                     </Link>
                     <h2 className="mt-4 text-gray-400">Join the resistance</h2>
                 </div>

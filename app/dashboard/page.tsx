@@ -90,7 +90,7 @@ export default function Dashboard() {
         <div className="min-h-screen bg-brutal-black text-white p-4 md:p-8 font-mono">
             <nav className="flex justify-between items-center mb-12 border-b border-gray-800 pb-4">
                 <Link href="/" className="hover:opacity-80 transition-opacity">
-                    <img src="/logo.png" alt="ANGOL EYUS" className="h-12 w-auto" />
+                    <img src="/logo.png" alt="ANGOLEYUS" className="h-12 w-auto" />
                 </Link>
                 <div className="flex gap-4 items-center">
                     <span className="text-xs text-gray-500">{user.email}</span>
