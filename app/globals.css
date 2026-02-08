@@ -4,24 +4,50 @@
 
 @layer base {
   body {
-    @apply bg-brutal-black text-brutal-white font-sans antialiased;
+    @apply bg-brutal-black text-brutal-white font-sans antialiased selection:bg-brutal-purple selection:text-white;
   }
 }
 
-.brutal-border {
-  border: 1px solid #333;
-  transition: all 0.2s ease;
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+
+  .text-glow-strong {
+    text-shadow: 0 0 30px rgba(139, 92, 246, 0.8), 0 0 60px rgba(139, 92, 246, 0.4);
+  }
+
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .glass-input {
+    @apply bg-black/50 backdrop-blur-sm border border-white/10 text-white placeholder-gray-500 focus:border-brutal-purple focus:ring-1 focus:ring-brutal-purple transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply relative px-8 py-4 bg-white text-black font-bold uppercase tracking-wider hover:bg-brutal-purple hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(139, 92, 246, 0.3)];
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-white/20 text-gray-400 hover:text-white hover:border-white transition-all uppercase tracking-wide text-sm;
+  }
 }
 
-.brutal-border:hover {
-  border-color: #7c3aed;
-  box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.glow-text {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+::-webkit-scrollbar-track {
+  background: #050505;
 }
 
-.purple-glow {
-  text-shadow: 0 0 20px rgba(124, 58, 237, 0.8);
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
 }
